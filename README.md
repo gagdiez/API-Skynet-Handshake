@@ -1,4 +1,4 @@
-# A NodeJS Server to Update Skylink in Handshake Domains
+# Update Skylink in Namebase
 
 I made a small nodejs service, that allows to easily register new skylinks in namebase. You can find it here: https://skynet-namespace.glitch.me/
 
