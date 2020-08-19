@@ -1,7 +1,7 @@
-# Submission # 2 (Skynet + Hanshake)
+# Submission # 2)
 https://github.com/gagdiez/microblogsc
 
-# Update Skylink in Namebase
+# Update Skylink in Namebase (# Submission # 1)
 
 I made a small nodejs service, that allows to easily register new skylinks in namebase. You can find it here: https://skynet-namespace.glitch.me/
 
