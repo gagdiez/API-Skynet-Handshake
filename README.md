@@ -1,4 +1,4 @@
-# Submission # 2)
+# Submission # 2
 https://github.com/gagdiez/microblogsc
 
 # Update Skylink in Namebase (# Submission # 1)
