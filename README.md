@@ -1,9 +1,9 @@
-# Update Skylink in Namebase
+# Update Skylink in Namebase (PROJECT #1)
 
 I made a small nodejs service, that allows to easily register new skylinks in namebase. You can find it here: https://skynet-namespace.glitch.me/
 
-## Why?
-While working on a personal project (https://siasky.net/hns/bunnu/), I realized that it's not simple to communicate apps stored in skynet (https://siasky.net) with namebase API (https://www.namebase.io). This is because their CORS policies, which do not allow the API to be accessed from a browser. If you are running into the same problems, here is a solution.
+## Why? (PROJECT #2)
+While working on a skynet+handshake project (github: https://github.com/gagdiez/microblogsc, page: https://siasky.net/hns/wakio/), I realized that it's not simple to communicate apps stored in skynet (https://siasky.net) with namebase API (https://www.namebase.io). This is because their CORS policies, which do not allow the API to be accessed from a browser. If you are running into the same problems, here is a solution.
 
 ## Usage
 Send a PUT request to https://skynet-namespace.glitch.me/ with the access-key, secret-key, domain name, and sialink. The server then will comunicate with the namebase api to update the domain, and point it to the new sialink.
