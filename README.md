@@ -1,12 +1,13 @@
 # Submission # 2
-https://github.com/gagdiez/microblogsc
+
+Important note: This repo (skynet_handshake_api) is a service for my main project WAKIO - The Decentralized Blogging Platform: https://github.com/gagdiez/microblogsc
 
 # Update Skylink in Namebase (# Submission # 1)
 
 I made a small nodejs service, that allows to easily register new skylinks in namebase. You can find it here: https://skynet-namespace.glitch.me/
 
-## Why? (PROJECT #2)
-While working on a skynet+handshake project (https://github.com/gagdiez/microblogsc), I realized that it's not simple to communicate apps stored in skynet (https://siasky.net) with namebase API (https://www.namebase.io). This is because their CORS policies, which do not allow the API to be accessed from a browser. If you are running into the same problems, here is a solution.
+## Why?
+While working on my other skynet+handshake project (https://github.com/gagdiez/microblogsc), I realized that it's not simple to communicate apps stored in skynet (https://siasky.net) with namebase API (https://www.namebase.io). This is because their CORS policies, which do not allow the API to be accessed from a browser. If you are running into the same problems, here is a solution.
 
 ## Usage
 Send a PUT request to https://skynet-namespace.glitch.me/ with the access-key, secret-key, domain name, and sialink. The server then will comunicate with the namebase api to update the domain, and point it to the new sialink.
