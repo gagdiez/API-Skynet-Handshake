@@ -1,8 +1,4 @@
-# Submission # 2
-
-Important note: This repo (skynet_handshake_api) is a service for my main project WAKIO - The Decentralized Blogging Platform: https://github.com/gagdiez/microblogsc
-
-# Update Skylink in Namebase (# Submission # 1)
+# Update Skylink in Namebase
 
 I made a small nodejs service, that allows to easily register new skylinks in namebase. You can find it here: https://skynet-namespace.glitch.me/
 
