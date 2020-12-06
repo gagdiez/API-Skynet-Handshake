@@ -9,31 +9,15 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-// When the web is accessed
-app.get('/', (req, res) => {
+app.get('/specific', (req, res) => {
   // Lets give the users some INFO
-  res.send(
-  `<head><title>API for Skylink + Namespace</title></head><body>
-   Usage: Send a PUT request, with the following data: access_key, secret_key, sialink, domain.
-   <br><br>
-   Example:
-   <br>
-   --------------------------------------------------------------------------------------------
-   <br><br>
-   const ak = "ACCESS KEY" <br>
-   const sk = "SECRET KEY" <br>
-   const domain = "YOUR HNS DOMAIN" <br>
-   const sialink = "NEW SIALINK" <br>
-   <br>
-   const data = `+'`{"access_key":"${ak}", "secret_key":"${sk}", "sialink":"${sialink}", "domain":"${domain}"}`'+
-   `
-   <br>
-   opts = {method:'PUT', body:data, headers:{'Content-Type':'application/json'}}
-   <br><br> 
-   fetch('https://skynet-namespace.glitch.me/', opts)<br>
-   .then(result => result.json())<br>
-   .then(result => console.log(result))<br>
-   .catch(err => console.error('error', err)) </body>`)
+  res.sendFile(__dirname + '/www/specific.html')
+});
+
+// When the web is accessed
+app.get('/*', (req, res) => {
+  // Lets give the users some INFO
+  res.sendFile(__dirname + '/www/index.html')
 });
 
 // When the method PUT is called
