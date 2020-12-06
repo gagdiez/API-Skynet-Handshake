@@ -15,7 +15,7 @@ const domain = "YOUR HNS DOMAIN"
 const sialink = "NEW SIALINK"
 
 const data = `{"access_key":ak, "secret_key":sk, "sialink":sialink, "domain":domain}`
-opts = {method:'PUT', body:data, headers:{'Content-Type':'application/json'}}
+opts = {method:'PUT', body:data}
 
 fetch('https://skynet-namespace.glitch.me/', opts)
 .then(result => result.json())
