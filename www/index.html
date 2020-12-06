@@ -11,23 +11,22 @@
    <br><br>
    Example:
    <br>
-   ----------------------------------------------------------------------------------
+   -------------------------------------------------------------------------
    <br><br>
    const ak = "ACCESS KEY" <br>
    const sk = "SECRET KEY" <br>
    const domain = "YOUR HNS DOMAIN" <br>
    const sialink = "NEW SIALINK" <br>
    <br>
-   const data = {"access_key":"${ak}", "secret_key":"${sk}",
-                 "sialink":"${sialink}", "domain":"${domain}"}
+   const data = {"access_key":ak, "secret_key":sk,
+                 "sialink":sialink, "domain":domain}
    <br>
-   opts = {method:'PUT', body:data, headers:{'Content-Type':'application/json'}}
+   opts = {method:'PUT', body:data}
    <br><br>
   
    fetch('https://skynet-namespace.glitch.me/', opts)<br>
    .then(result => result.json())<br>
    .then(result => console.log(result))<br>
    .catch(err => console.error('error', err))
-  
 </body>
 </html>
